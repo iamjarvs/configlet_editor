@@ -4,7 +4,9 @@ Main application file for the Apstra Configlet Builder.
 This file orchestrates the UI components and manages the overall
 application flow.
 """
-
+import os
+import sys
+sys.path.append(os.getcwd())  # Add the current directory to the Python path
 import streamlit as st
 
 from app.utils.config.session_state import initialize_session_state
