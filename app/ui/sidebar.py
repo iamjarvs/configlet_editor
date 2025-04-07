@@ -41,8 +41,8 @@ def render_sidebar() -> None:
 
     st.sidebar.title("Apstra Configlet Builder")
     st.sidebar.subheader("Login")
-    ip_url = st.sidebar.text_input("IP/URL", value=state.api_ip_url or "10.28.142.3", key="ip_url_input")
-    username = st.sidebar.text_input("Username", value=state.api_username or "admin", key="username_input")
+    ip_url = st.sidebar.text_input("IP/URL", value=state.api_ip_url, key="ip_url_input")
+    username = st.sidebar.text_input("Username", value=state.api_username , key="username_input")
     password = st.sidebar.text_input("Password", type="password", key="password_input")
 
     # Update session state when input changes
